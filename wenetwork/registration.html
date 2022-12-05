@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wenetwork</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			background: blue;
+			color: white;
+			display: flex;
+		}
+		header h1{
+			font-family: cursive;
+		}
+		ul{
+			display: flex;
+			margin-left: 20%;
+			margin-top: 10px;
+		}
+		ul li{
+			list-style: none;
+			margin-left: 20px;
+		}
+		ul li a{
+			color: white;
+			font-size: 20px;
+			background: white;
+			color: blue;
+			padding: 6px;
+			border-radius: 10px;
+		}
+		ul li a:hover, .active{
+			background: green;
+			color: white;
+		}
+		.page_title{
+			font-family: cursive;
+		}
+		form{
+			border: 1px solid;
+			width: 30%;
+			margin-left: 35%;
+			padding: 10px;
+		}
+		input{
+			padding: 5px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Wenetwork</h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="member.html">Members</a></li>
+			<li><a href="jobs.html">Post Jobs</a></li>
+			<li><a href="donate.html">Donations</a></li>
+			<li><a href="registration.html" class="active">Registration</a></li>
+		</ul>
+	</header>
+	<center><h1 class="page_title">Register as a Member</h1></center>
+	<hr>
+	<div class="content">
+		<form>
+			<label>Former School: </label>
+			<input type="text" id="school" placeholder="Former School"><br>
+			<label>First Name: </label>
+			<input type="text" id="f_name" placeholder="First Name"><br>
+			<label>Last Name: </label>
+			<input type="text" id="l_name" placeholder="Last Name"><br>
+			<label>Email Address: </label>
+			<input type="email" id="email" placeholder="Email Address"><br>
+			<label>Assigned ID: </label>
+			<input type="text" id="assigned_id" placeholder="Assigned ID"><br>
+			<label>Major: </label>
+			<input type="text" id="major" placeholder="Major"><br>
+			<label>Country: </label>
+			<input type="text" id="country" placeholder="Country"><br>
+			<button class="btn btn-primary" onclick="register();">Register</button>
+		</form>
+		
+	</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="registration.js"></script>
